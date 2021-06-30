@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Sign-Up</title>
+    <meta charset="UTF-8">
+    <script src="signup.js"></script>
+</head>
+
+<body>
+    <span id="title">No Coin</span><br><br>
+    <form method="POST" onsubmit="return validate()">
+        <label for="mail">
+            Email Address <input id="mail" type="email" required>
+        </label><br><br>
+        <label for="password">
+            Create New Password <input id="pass1" type="password" required onkeydown="validatePass();">
+        </label><br><br>
+        <label for="confirm-password">
+            Confirm Your Password <input id="pass2" type="password" required onkeydown="matchPass();">
+        </label><br><br>
+        <label for="age">
+            Date of Birth <input id="age" type="date" required>
+        </label><br><br>
+        <label for="check">
+            <input type="checkbox" id="check" onclick="checkMe()"> By clicking, I agree to the terms and conditions and privacy policy.
+        </label><br><br>
+        <button id="submit" type="submit" disabled>Sign Up!</button>
+    </form>
+</body>
